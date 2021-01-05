@@ -4,6 +4,7 @@ module.exports = (api) => {
   api.extendPackage({
     dependencies: {
       axios: '^0.21.1',
+      'crypto-js': '^4.0.0',
       'v-clipboard': '^2.2.3',
       'view-design': '^4.4.0',
       'vue-cropper': '^0.5.6',

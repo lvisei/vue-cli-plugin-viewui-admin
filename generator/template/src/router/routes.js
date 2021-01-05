@@ -55,16 +55,16 @@ export const constantRoutes = [
 const syncRoutes = [
   {
     path: '/',
-    name: 'Home',
-    meta: { title: '首页', icon: 'md-home' },
+    name: 'entrance',
+    meta: { title: '主页', icon: 'md-home' },
     component: MainView,
-    redirect: '/dashboard',
+    redirect: '/home',
     children: [
       {
-        path: 'dashboard',
-        name: 'Dashboard',
-        component: () => import(/* webpackChunkName: "dashboard" */ '@/pages/dashboard'),
-        meta: { title: '仪表盘', icon: 'md-speedometer' }
+        path: 'home',
+        name: 'Home',
+        component: () => import(/* webpackChunkName: "home" */ '@/pages/home'),
+        meta: { title: '首页', icon: 'md-speedometer' }
       }
     ]
   },
@@ -73,7 +73,7 @@ const syncRoutes = [
     name: 'SystemManagement',
     meta: { title: '系统管理', icon: 'md-settings' },
     component: MainView,
-    redirect: '/dashboard',
+    redirect: '/home',
     children: [
       {
         path: 'user-management',
