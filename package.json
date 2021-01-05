@@ -1,0 +1,27 @@
+{
+  "name": "vue-cli-plugin-viewui-admin",
+  "version": "0.0.1",
+  "description": "ViewUI(iView) admin template plugin for @vue/cli 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuvigongzuoshi/vue-cli-plugin-viewui-admin.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "viewui",
+    "iView",
+    "admin",
+    "template"
+  ],
+  "author": "https://github.com/liuvigongzuoshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuvigongzuoshi/vue-cli-plugin-viewui-admin/issues"
+  },
+  "homepage": "https://github.com/liuvigongzuoshi/vue-cli-plugin-viewui-admin#readme"
+}
