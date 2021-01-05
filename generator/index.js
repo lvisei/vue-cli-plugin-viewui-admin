@@ -1,4 +1,5 @@
 // https://cli.vuejs.org/zh/dev-guide/plugin-dev.html#generator
+const { deleteFolder, updateEslintRuleConfig } = require('./utils')
 
 module.exports = (api) => {
   api.extendPackage({
@@ -21,5 +22,13 @@ module.exports = (api) => {
     },
   })
 
+  const srcPath = api.resolve('src')
+  deleteFolder(srcPath)
+
   api.render('./template')
+
+  api.onCreateComplete(() => {
+    const configPath = api.resolve('./.eslintrc.js')
+    updateEslintRuleConfig(configPath)
+  })
 }
