@@ -1,9 +1,11 @@
 // https://cli.vuejs.org/zh/dev-guide/plugin-dev.html#generator
+const { deleteFolder, updateEslintRuleConfig } = require('./utils')
 
 module.exports = (api) => {
   api.extendPackage({
     dependencies: {
       axios: '^0.21.1',
+      'crypto-js': '^4.0.0',
       'v-clipboard': '^2.2.3',
       'view-design': '^4.4.0',
       'vue-cropper': '^0.5.6',
@@ -20,5 +22,13 @@ module.exports = (api) => {
     },
   })
 
+  const srcPath = api.resolve('src')
+  deleteFolder(srcPath)
+
   api.render('./template')
+
+  api.onCreateComplete(() => {
+    const configPath = api.resolve('./.eslintrc.js')
+    updateEslintRuleConfig(configPath)
+  })
 }
