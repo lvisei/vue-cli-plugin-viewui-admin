@@ -1,6 +1,7 @@
 # vue-cli-plugin-viewui-admin
 
 <!-- ![npm](https://img.shields.io/npm/dm/vue-cli-plugin-viewui-admin.svg) -->
+
 [![npm](https://img.shields.io/npm/v/vue-cli-plugin-viewui-admin.svg)](https://www.npmjs.com/package/vue-cli-plugin-viewui-admin)
 [![vue-cli3](https://img.shields.io/badge/vue--cli-4.x-brightgreen.svg)](https://github.com/vuejs/vue-cli)
 
@@ -73,7 +74,7 @@ After adding the plugin, the file structure will be the below.
 
 ## Related Projects
 
-- [vue-iview-admin-template](https://github.com/liuvigongzuoshi/vue-iview-admin-template) - Vue 2.0 admin template based on View UI 🐜
+- [vue-iview-admin-template](https://github.com/lvisei/vue-iview-admin-template) - Vue 2.0 admin template based on View UI 🐜
 
 ## License
 
